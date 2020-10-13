@@ -1,0 +1,50 @@
+{
+  "name": "curso-platzi-react-avanzado",
+  "version": "1.0.0",
+  "description": "¡Sígueme en Youtube! https://www.youtube.com/midudev",
+  "main": "index.js",
+  "scripts": {
+    "vercel-build": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard",
+    "build": "webpack",
+    "deploy-backend": "vercel",
+    "lint:fix": "standard --fix",
+    "dev": "webpack-dev-server --open",
+    "build-dev": "./node_modules/.bin/webpack --mode=development ./src/index.js",
+    "build-prod": "./node_modules/.bin/webpack --mode=production ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisloarryn/curso-platzi-react-avanzado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisloarryn/curso-platzi-react-avanzado/issues"
+  },
+  "homepage": "https://github.com/chrisloarryn/curso-platzi-react-avanzado#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/runtime": "^7.11.2",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "standard": "^14.3.4",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.11.0",
+    "styled-components": "^5.2.0"
+  },
+  "standard": [
+    "/api/**"
+  ]
+}
