@@ -12,7 +12,8 @@ export const Logo = props => {
         background: '0 0'
       }}
       preserveAspectRatio='xMidYMid'
-      {...props}>
+      {...props}
+    >
       <defs>
         <linearGradient
           id='prefix__editing-gradow-gradient'
@@ -20,7 +21,8 @@ export const Logo = props => {
           x2={1}
           y1={0.5}
           y2={0.5}
-          gradientUnits='objectBoundingBox'>
+          gradientUnits='objectBoundingBox'
+        >
           <stop offset={0} stopColor='#b500b5' />
           <stop offset={1} stopColor='#ff8c00' />
         </linearGradient>
@@ -29,7 +31,8 @@ export const Logo = props => {
           x='-100%'
           y='-100%'
           width='300%'
-          height='300%'>
+          height='300%'
+        >
           <feFlood floodColor='rgba(0%,0%,0%,0)' result='flood' />
           <feComposite
             operator='in'

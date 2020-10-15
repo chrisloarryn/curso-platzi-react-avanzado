@@ -48,7 +48,7 @@ app.get('/categories', function (req, res) {
   res.send(categories)
 })
 
-if (!process.env.NOW_REGION) {
+if (!process.env.VERCEL_REGION) {
   app.listen(PORT, () => {
     console.log(`Listening at http://localhost:${PORT}/graphql`)
   })

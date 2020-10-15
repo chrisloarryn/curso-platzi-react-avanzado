@@ -1,5 +1,9 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { fadeIn } from '../../styles/animation'
+
+export const Article = styled.article`
+  min-height: 200px;
+`
 
 export const ImgWrapper = styled.div`
   border-radius: 10px;
@@ -25,7 +29,13 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   padding-top: 8px;
+  transition: color 0.5s ease;
   & svg {
     margin-right: 4px;
   }
+  ${props =>
+    props.isOver &&
+    css`
+      color: red;
+    `}
 `
