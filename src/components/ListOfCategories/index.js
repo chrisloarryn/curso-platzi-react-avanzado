@@ -1,4 +1,7 @@
+// Dependencies
 import React, { useEffect, useState } from 'react'
+
+// Components
 import { Category } from '../Category'
 import { List, Item } from './styles'
 
@@ -41,7 +44,7 @@ export const ListOfCategories = () => {
     <List fixed={fixed}>
       {categories.map(category => (
         <Item key={`${category.id}_${category.name}`}>
-          <Category {...category} />
+          <Category {...category} path={`/pet/${category.id}`} />
         </Item>
       ))}
     </List>

@@ -10,7 +10,7 @@
     "build": "webpack",
     "deploy-backend": "vercel",
     "lint:fix": "standard --fix",
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --history-api-fallback",
     "dev:open": "webpack-dev-server --open",
     "build-dev": "./node_modules/.bin/webpack --mode=development ./src/index.js",
     "build-prod": "./node_modules/.bin/webpack --mode=production ./src/index.js"
@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
+    "@reach/router": "^1.3.4",
     "apollo-boost": "^0.4.9",
     "graphql": "^15.3.0",
     "intersection-observer": "^0.11.0",

@@ -3,6 +3,7 @@ import React from 'react'
 import get from 'lodash/get'
 import { useQuery } from '@apollo/react-hooks'
 
+// Queries
 import { GET_PHOTOS } from './../../Queries'
 
 // Components
