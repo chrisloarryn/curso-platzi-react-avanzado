@@ -1,7 +1,7 @@
+// Dependencies
 import React from 'react'
-
-// @apollo hooks
 import { useMutation } from '@apollo/react-hooks'
+import { Link } from '@reach/router'
 
 // custom hooks
 import { useLocalStorage } from './../../hooks/useLocalStorage'
@@ -34,11 +34,11 @@ export const PhotoCard = ({ id, likes = 0, src = '' }) => {
     <Article ref={element}>
       {show && (
         <>
-          <a href={`/?detail=${id}`}>
+          <Link to={`/detail/${id}`}>
             <ImgWrapper>
               <Img src={src} />
             </ImgWrapper>
-          </a>
+          </Link>
 
           <FavButton liked={liked} likes={likes} onClick={handleFavClick} />
         </>
