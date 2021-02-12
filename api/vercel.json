@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "name": "petgram-server-chrisloarryn",
-  "alias": ["petgram-api-chrisloarryn"],
-  "builds": [{ "src": "index.js", "use": "@now/node" }],
+  "name": "server-chrisloarryn",
+  "alias": ["api-chrisloarryn"],
+  "builds": [{ "src": "index.js", "use": "@vecel/node" }],
   "routes": [
     {
       "headers": {
